@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Style for the dropdown container */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the dropdown button */
+        .dropdown-button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style for the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Style for the dropdown links */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change the color of links when you hover over them */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown content when the dropdown button is clicked */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        body {
+    background-image: url('MicrosoftTeams-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+        </style>
+</head>
+<body>
+    <h1>Register Now!</h1>
+    <div><form>
+              <!-- Name Input -->
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br>
+      
+              <!-- Email Input -->
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br>
+      
+              <!-- Password Input -->
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required> &nbsp;
+              <label for="password">Confirm Password:</label>
+              <input type="password" id="password" name="Confirm Password" required><br>    
+      
+              <label for="org">Choose Organisation Type</label>
+  <select name="org" id="org">
+    <option value="org">Choose</option>
+    <option value="org">Restaurant</option>
+    <option value="org">Office</option>
+    <option value="org">PG</option>
+    <option value="org">Banquet</option>
+    <option value="org">Other</option>
+  </select>
+  <br>
+  <label for="ORGName">ORGName:</label>
+  <input type="text" id="ORGName" name="ORGName" required><br>
+              <!-- Textarea for Message -->
+              <label for="Address">Address:</label><br>
+              <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br>
+      
+              <!-- Submit Button -->
+              <input type="submit" value="Submit">
+          </form> 
+        </div>
+</body>
+</html>

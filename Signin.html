@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        /* Style for the login form container */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for form labels */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Style for input fields */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Style for the submit button */
+        input[type="submit"] {
+            float : center;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Change button color on hover */
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        body {
+    background-image: url('MicrosoftTeams-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    </style>
+</head>
+<body>
+  
+    <h1>Sign In Now!
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required >
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"  required>
+
+            <input type="submit" value="Login">
+            
+        </form>
+    </div>
+</body>
+</html>

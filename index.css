@@ -1,0 +1,63 @@
+/* Reset some default browser styles */
+body, h1, h2, p, form {
+    margin: 0px;
+    padding: 0;
+}
+
+/* Style for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for the registration container */
+div {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Style for the "Register Now!" heading */
+h1 {
+    color: #333;
+}
